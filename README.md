@@ -12,3 +12,4 @@ A Positional Servo Motor is a type of motor that allows for positional control. 
 * Jumper Wires
 
 ### Schematic
+![Positional Servo Schematic. The Servo is plugged into the Arduino with the Signal wire going to pin 5, the Voltage wire going to the 5V pin, and the Ground wire going to the ground pin.](https://github.com/19porterc/ECE484-ServoMotor/Positional_Servo/Positional_Servo_Schematic.png?ra)
