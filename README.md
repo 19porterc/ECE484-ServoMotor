@@ -28,7 +28,7 @@ There are three functions in the Positional Servo library.
 
 ### Demo
 Below is the link to a YouTube video showcasing this program in action. The positional servo motor will center itself, then move to 0º, pause, move to 60º, pause, move to 120º, pause, move to 180º, pause, then back to 0º.
-* Placeholder
+* [Servo Motor Demo](https://youtu.be/l828bsa6ecI)
 
 ## Continuous Servo Motor
 ### Introduction
@@ -44,7 +44,7 @@ A Continuous Servo Motor is a type of motor that allows for control over speed a
 
 ### Datasheet
 Below is the link to the datasheet for the servo used in this tutorial. If you have a different servo motor than the one listed below, be sure to consult that datasheet for your own reference.
-* Placeholder
+* [SG90-HV Datasheet](https://akizukidenshi.com/goodsaffix/sg90-hv.pdf)
 
 ### Code Functionality
 There are two functions in the Continuous Servo library.
@@ -52,7 +52,3 @@ There are two functions in the Continuous Servo library.
   * This function gets the servo ready for use. It sets pin 9 on the Arduino as an output pin and sets the servo motor to low.
 * void set_speed(int speed);
   * This function sets the speed of the servo based on the input of the user. The valid range of input is from -90 to 90.
-
-### Demo
-Below is the link to a YouTube video showcasing this program in action. The continuous servo motor will move in the reverse direction for one second, stop for one second, move in the forward direction for one second, stop for one second, and then move in the reverse direction for one second again.
-* Placeholder
