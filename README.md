@@ -73,13 +73,13 @@ To compile the following code with AVR, you will need to have both avr-gcc-11.1.
      c:\avr-gcc-11.1.0\bin\avr-gcc.exe -Os -DF_CPU=16000000UL -mmcu=atmega328p -c main.c -o main.o
      c:\avr-gcc-11.1.0\bin\avr-gcc.exe -Os -DF_CPU=16000000UL -mmcu=atmega328p -c libPositional/positional.c -o positional.o
      ```
-   - You may have to change the filepath depending on where avr-gcc is installed.
+   - You may have to change the file path depending on where avr-gcc is installed.
 5. **Link Files**
    - Type the following command to link the files.
      ```
      c:\avr-gcc-11.1.0\bin\avr-gcc.exe -mmcu=atmega328p -o main.elf main.o positional.o
      ```
-   - You may have to change the filepath depending on where avr-gcc is installed.
+   - You may have to change the file path depending on where avr-gcc is installed.
 6. **Check COM Port of Arduino**
    - Open the Arduino IDE to find the COM port of the board.
    - The example here uses com11. Yours may be different.
@@ -89,7 +89,7 @@ To compile the following code with AVR, you will need to have both avr-gcc-11.1.
      ```
      c:\avr-gcc-11.1.0\bin\avrdude.exe -F -V -c arduino -p ATMEGA328P -P com11 -b 115200 -U flash:w:main.elf
      ```
-   - You may have to change the filepath depending on where avrdude is installed.
+   - You may have to change the file path depending on where avrdude is installed.
 8. **Continuous Files**
    - Once you are finished with the positional servo motor, it is time to move to the continuous servo.
    - Disconnect the Arduino from the computer before switching pins.
@@ -100,13 +100,13 @@ To compile the following code with AVR, you will need to have both avr-gcc-11.1.
      c:\avr-gcc-11.1.0\bin\avr-gcc.exe -Os -DF_CPU=16000000UL -mmcu=atmega328p -c main.c -o main.o
      c:\avr-gcc-11.1.0\bin\avr-gcc.exe -Os -DF_CPU=16000000UL -mmcu=atmega328p -c libContinuous/continuous.c -o continuous.o
      ```
-   - You may have to change the filepath depending on where avr-gcc is installed.
+   - You may have to change the file path depending on where avr-gcc is installed.
 10. **Link Files**
     - Type the following command to link the files.
       ```
       c:\avr-gcc-11.1.0\bin\avr-gcc.exe -mmcu=atmega328p -o main.elf main.o continuous.o
       ```
-    - You may have to change the filepath depending on where avr-gcc is installed.
+    - You may have to change the file path depending on where avr-gcc is installed.
 11. **Check COM Port of Arduino**
     - Plug the Arduino back in and use the Arduino IDE to find the COM port of the board.
     - The example here uses com11. Yours may be different.
@@ -116,4 +116,4 @@ To compile the following code with AVR, you will need to have both avr-gcc-11.1.
       ```
       c:\avr-gcc-11.1.0\bin\avrdude.exe -F -V -c arduino -p ATMEGA328P -P com11 -b 115200 -U flash:w:main.elf
       ```
-    - You may have to change the filepath depending on where avrdude is installed.
+    - You may have to change the file path depending on where avrdude is installed.
