@@ -23,7 +23,7 @@ Below is the link to a YouTube video showcasing this program in action. The posi
 
 ## Continuous Servo Motor
 ### Introduction
-A Continuous Servo Motor is a type of motor that allows for control over speed and direcetion of continuous rotation. These motors use pulse width modulation (PWM) to control the speed and direction of the actuater. The lower end of the PWM signal, usually around 1000, will rotate the actuater in the "reverse" direction at full speed. A higher PWM signal, the usual maximum of 2000, will rotate the actuater in the "forward" direction at full speed. The PWM value that is halfway between the minimum and maximum, usually 1500, will stop the actuator. PWM signals and the rotational behavior have a linear relationship. Any PWM signal set between 1000 and 1500 will move the actuater of the servo in the "reverse" direction with proportionate speed. Any PWM signal set between 1500 and 2000 will move the actuater of the servo in the "forward" direction with proportionate speed.
+A Continuous Servo Motor is a type of motor that allows for control over speed and direcetion of continuous rotation. These motors use pulse width modulation (PWM) to control the speed and direction of the actuater. The lower end of the PWM signal, usually around 1000, will rotate the actuater in the relative reverse direction at full speed. A higher PWM signal, the usual maximum of 2000, will rotate the actuater in the relative forward direction at full speed. The PWM value that is halfway between the minimum and maximum, usually 1500, will stop the actuator. PWM signals and the rotational behavior have a linear relationship. Any PWM signal set between 1000 and 1500 will move the actuater of the servo in the relative reverse direction with proportionate speed. Any PWM signal set between 1500 and 2000 will move the actuater of the servo in the relative forward direction with proportionate speed.
 
 ### Materials
 * Arduino Uno R3
@@ -38,5 +38,5 @@ Below is the link to the datasheet for the servo used in this tutorial. If you h
 * Placeholder
 
 ### Demo
-Below is the link to a YouTube video showcasing this program in action. The continuous servo motor will move in the "reverse" direction for one second, stop for one second, move in the "forward" direction for one second, stop for one second, and then move in the "reverse" direction for one second again.
+Below is the link to a YouTube video showcasing this program in action. The continuous servo motor will move in the reverse direction for one second, stop for one second, move in the forward direction for one second, stop for one second, and then move in the reverse direction for one second again.
 * Placeholder
