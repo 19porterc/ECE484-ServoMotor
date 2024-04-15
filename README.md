@@ -52,3 +52,80 @@ There are two functions in the Continuous Servo library.
   * This function gets the servo ready for use. It sets pin 9 on the Arduino as an output pin and sets the servo motor to low.
 * void set_speed(int speed);
   * This function sets the speed of the servo based on the input of the user. The valid range of input is from -90 to 90.
+
+## Compiling with AVR
+To compile the following code with AVR, you will need to have both avr-gcc-11.1.0 installed as well as avrdude. Once those have been installed, the compilation process can begin.
+1. **Open Command Prompt**
+   - On your windows machine, open command prompt.
+2. **Verify AVR**
+   - You can verify AVR inside command prompt using
+     ```
+     avr-gcc -v
+     avrdude -v
+     ```
+   - You may have to install these if missing.
+3. **Change Directory to Source Code Directory**
+   - cd into the directory to where you downloaded these files.
+4. **Compile Each File**
+   - We will start with the positional servo code. cd into that directory.
+   - Type the following commands to compile the positional servo code.
+     ```
+     c:\avr-gcc-11.1.0\bin\avr-gcc.exe -Os -DF_CPU=16000000UL -mmcu=atmega328p -c main.c -o main.o
+     c:\avr-gcc-11.1.0\bin\avr-gcc.exe -Os -DF_CPU=16000000UL -mmcu=atmega328p -c libPositional/positional.c -o positional.o
+     ```
+   - You may have to change the filepath depending on where avr-gcc is installed.
+5. **Link Files**
+   - Type the following command to link the files.
+     ```
+     c:\avr-gcc-11.1.0\bin\avr-gcc.exe -mmcu=atmega328p -o main.elf main.o positional.o
+     ```
+   - You may have to change the filepath depending on where avr-gcc is installed.
+6. **Check COM Port of Arduino**
+   - Open the Arduino IDE to find the COM port of the board.
+   - The example here uses com11. Yours may be different.
+   - The COM port can be found under Tools -> Port
+7. **Upload Code**
+   - Type the following command to upload the code to the Arduino.
+     ```
+     c:\avr-gcc-11.1.0\bin\avrdude.exe -F -V -c arduino -p ATMEGA328P -P com11 -b 115200 -U flash:w:main.elf
+     ```
+   - You may have to change the filepath depending on where avrdude is installed.
+8. **Continuous Files**
+   - Once you are finished with the positional servo motor, it is time to move to the continuous servo.
+   - Disconnect the Arduino from the computer before switching pins.
+   - Use `cd ..` to go back a folder and then cd into the continuous servo folder.
+9. **Compile Continuous Files**
+   - Type the following commands to compile the continuous servo code.
+     ```
+     c:\avr-gcc-11.1.0\bin\avr-gcc.exe -Os -DF_CPU=16000000UL -mmcu=atmega328p -c main.c -o main.o
+     c:\avr-gcc-11.1.0\bin\avr-gcc.exe -Os -DF_CPU=16000000UL -mmcu=atmega328p -c libContinuous/continuous.c -o continuous.o
+     ```
+   - You may have to change the filepath depending on where avr-gcc is installed.
+10. **Link Files**
+    - Type the following command to link the files.
+      ```
+      c:\avr-gcc-11.1.0\bin\avr-gcc.exe -mmcu=atmega328p -o main.elf main.o continuous.o
+      ```
+    - You may have to change the filepath depending on where avr-gcc is installed.
+11. **Check COM Port of Arduino**
+    - Plug the Arduino back in and use the Arduino IDE to find the COM port of the board.
+    - The example here uses com11. Yours may be different.
+    - The COM port can be found under Tools -> Port
+12. **Upload Code**
+    - Type the following command to upload the code to the Arduino.
+      ```
+      c:\avr-gcc-11.1.0\bin\avrdude.exe -F -V -c arduino -p ATMEGA328P -P com11 -b 115200 -U flash:w:main.elf
+      ```
+    - You may have to change the filepath depending on where avrdude is installed.
+
+
+
+
+
+
+
+
+
+
+
+
