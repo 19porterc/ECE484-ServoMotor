@@ -15,7 +15,7 @@ A Positional Servo Motor is a type of motor that allows for positional control. 
 
 ### Datasheet
 Below is the link to the datasheet for the servo used in this tutorial. If you have a different servo motor than the one listed below, be sure to consult that datasheet for your own reference.
-* Placeholder
+* [Miuzei MS18 Datasheet](https://images-na.ssl-images-amazon.com/images/I/61jUf7Q-0uL.pdf)
 
 ### Demo
 Below is the link to a YouTube video showcasing this program in action. The positional servo motor will center itself, then move to 0º, pause, move to 60º, pause, move to 120º, pause, move to 180º, pause, then back to 0º.
