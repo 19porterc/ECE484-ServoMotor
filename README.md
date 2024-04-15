@@ -17,6 +17,15 @@ A Positional Servo Motor is a type of motor that allows for positional control. 
 Below is the link to the datasheet for the servo used in this tutorial. If you have a different servo motor than the one listed below, be sure to consult that datasheet for your own reference.
 * [Miuzei MS18 Datasheet](https://images-na.ssl-images-amazon.com/images/I/61jUf7Q-0uL.pdf)
 
+### Code Functionality
+There are three functions in the Positional Servo library.
+* void PS_Setup();
+  * This function gets the servo ready for use. It sets pin 5 on the Arduino as an output pin and sets the servo motor to low.
+* void PS_Center();
+  * This function will center the servo at 90º when called.
+* void set_angle(int angle);
+  * This function sets the angle of the servo based on the input of the user. The valid range of numbers is any angle from 0 to 180.
+
 ### Demo
 Below is the link to a YouTube video showcasing this program in action. The positional servo motor will center itself, then move to 0º, pause, move to 60º, pause, move to 120º, pause, move to 180º, pause, then back to 0º.
 * Placeholder
@@ -36,6 +45,13 @@ A Continuous Servo Motor is a type of motor that allows for control over speed a
 ### Datasheet
 Below is the link to the datasheet for the servo used in this tutorial. If you have a different servo motor than the one listed below, be sure to consult that datasheet for your own reference.
 * Placeholder
+
+### Code Functionality
+There are two functions in the Continuous Servo library.
+* void CS_Setup();
+  * This function gets the servo ready for use. It sets pin 5 on the Arduino as an output pin and sets the servo motor to low.
+* void set_speed(int speed);
+  * This function sets the speed of the servo based on the input of the user. The valid range of input is from -90 to 90.
 
 ### Demo
 Below is the link to a YouTube video showcasing this program in action. The continuous servo motor will move in the reverse direction for one second, stop for one second, move in the forward direction for one second, stop for one second, and then move in the reverse direction for one second again.
