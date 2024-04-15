@@ -49,7 +49,7 @@ Below is the link to the datasheet for the servo used in this tutorial. If you h
 ### Code Functionality
 There are two functions in the Continuous Servo library.
 * void CS_Setup();
-  * This function gets the servo ready for use. It sets pin 5 on the Arduino as an output pin and sets the servo motor to low.
+  * This function gets the servo ready for use. It sets pin 9 on the Arduino as an output pin and sets the servo motor to low.
 * void set_speed(int speed);
   * This function sets the speed of the servo based on the input of the user. The valid range of input is from -90 to 90.
 
