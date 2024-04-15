@@ -27,7 +27,7 @@ A Continuous Servo Motor is a type of motor that allows for control over speed a
 
 ### Materials
 * Arduino Uno R3
-* Positional Servo Motor
+* Continuous Servo Motor
 * Jumper Wires
 
 ### Schematic
