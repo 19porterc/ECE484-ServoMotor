@@ -117,15 +117,3 @@ To compile the following code with AVR, you will need to have both avr-gcc-11.1.
       c:\avr-gcc-11.1.0\bin\avrdude.exe -F -V -c arduino -p ATMEGA328P -P com11 -b 115200 -U flash:w:main.elf
       ```
     - You may have to change the filepath depending on where avrdude is installed.
-
-
-
-
-
-
-
-
-
-
-
-
